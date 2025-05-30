@@ -1,0 +1,535 @@
+/* Custom Military Palette */
+:root {
+  --military-green: #3b4d3a;
+  --olive: #6b7a4b;
+  --khaki: #bdb76b;
+  --sand: #f4eec7;
+  --black: #222;
+  --white: #fff;
+  --camo-dark: #2e3a27;
+  --camo-light: #8a9567;
+  --danger: #b22222;
+  --accent: #f4eec7;
+  --shadow: rgba(34,34,34,0.25);
+}
+
+/* General background with camouflage and overlay */
+body {
+  background: url('./assets/camouflage-bg.png') repeat, linear-gradient(135deg, var(--camo-dark) 0%, var(--olive) 100%);
+  color: var(--sand);
+  font-family: 'Roboto Slab', 'Staatliches', 'Roboto Mono', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  background-blend-mode: multiply;
+}
+
+/* HEADER */
+header.main-header {
+  background: linear-gradient(90deg, var(--military-green) 70%, var(--olive));
+  border-bottom: 6px double var(--khaki);
+  box-shadow: 0 6px 24px var(--shadow);
+  padding: 0;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 1rem 2rem;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  font-family: 'Staatliches', 'Roboto Slab', Arial, sans-serif;
+  font-size: 2.2rem;
+  color: var(--khaki);
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 var(--black), 0 0 8px var(--olive);
+  gap: 1rem;
+  position: relative;
+}
+.logo-title img {
+  margin-right: 0.5rem;
+  filter: drop-shadow(0 4px 8px var(--black));
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.header-btn {
+  background: linear-gradient(90deg, var(--olive) 60%, var(--khaki) 100%);
+  color: var(--military-green);
+  border: 2px dashed var(--khaki);
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0.6rem 1.4rem 0.6rem 1.1rem;
+  font-size: 1rem;
+  margin-left: 0.2rem;
+  box-shadow: 2px 2px 0 var(--black), 0 0 8px var(--olive);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: background 0.2s, color 0.2s, transform 0.1s, box-shadow 0.2s;
+  text-decoration: none;
+}
+.header-btn:hover {
+  background: var(--danger);
+  color: var(--white);
+  border-color: var(--danger);
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 0 4px 16px var(--danger);
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(120deg, rgba(59,77,58,0.96) 80%, rgba(139, 122, 75, 0.85) 100%);
+  position: relative;
+  padding: 3.5rem 1.5rem 2.5rem 1.5rem;
+  text-align: center;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 8px 32px var(--shadow);
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+  background-image: url('./assets/camouflage-bg.png'), linear-gradient(120deg, rgba(59,77,58,0.96) 80%, rgba(139, 122, 75, 0.85) 100%);
+  background-blend-mode: multiply;
+}
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--khaki);
+  text-shadow: 2px 2px 0 var(--black), 0 0 8px var(--olive);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  font-family: 'Staatliches', 'Roboto Slab', Arial, sans-serif;
+  position: relative;
+}
+/* Removed the military-shield.png icon */
+.hero h1::before {
+  content: "";
+  display: none;
+}
+.hero p {
+  font-size: 1.18rem;
+  color: var(--sand);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  background: rgba(34,34,34,0.10);
+  border-radius: 12px;
+  padding: 1.2em 1em;
+  box-shadow: 0 2px 12px rgba(34,34,34,0.10);
+}
+
+/* SECTION DIVIDER */
+.section-divider {
+  width: 100%;
+  height: 32px;
+  background: url('./assets/camouflage.jpg') repeat-x center/cover;
+  border-top: 2px dashed var(--khaki);
+  border-bottom: 2px dashed var(--khaki);
+  margin: 2.5rem 0;
+  opacity: 0.25;
+}
+
+/* PLANS SECTION */
+.plans {
+  background: rgba(59, 77, 58, 0.92);
+  border-radius: 24px;
+  max-width: 1100px;
+  margin: 0 auto 2.5rem auto;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 6px 32px var(--shadow);
+  border: 2.5px dashed var(--khaki);
+  position: relative;
+  overflow: hidden;
+  background-image: url('./assets/camouflage-bg.png');
+  background-blend-mode: multiply;
+}
+.plans h2 {
+  color: var(--khaki);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  position: relative;
+}
+.plans .icon {
+  width: 1.7em;
+  height: 1.7em;
+  fill: var(--khaki);
+  filter: drop-shadow(0 2px 4px var(--black));
+}
+.plan-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.card {
+  background: linear-gradient(120deg, var(--olive) 80%, var(--khaki) 100%);
+  border: 2.5px solid var(--khaki);
+  border-radius: 16px;
+  padding: 2rem 1.2rem 1.2rem 1.2rem;
+  box-shadow: 2px 2px 0 var(--black), 0 0 12px var(--olive), inset 0 0 24px rgba(34,34,34,0.10);
+  color: var(--sand);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.15s;
+  z-index: 1;
+  min-width: 270px;
+  max-width: 340px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card.recommended {
+  border: 3.5px solid var(--danger);
+  box-shadow: 0 0 0 4px rgba(178,34,34,0.12), 2px 2px 0 var(--black), 0 0 12px var(--olive);
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px var(--black), 0 0 24px var(--danger);
+}
+.card h3 {
+  font-size: 1.3rem;
+  color: var(--military-green);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: 'Staatliches', 'Roboto Slab', Arial, sans-serif;
+}
+.plan-icon {
+  width: 1.3em;
+  height: 1.3em;
+  fill: var(--military-green);
+  filter: drop-shadow(0 2px 4px var(--black));
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card li {
+  background: var(--camo-light);
+  color: var(--black);
+  margin-bottom: 0.7em;
+  padding: 0.7em 1em;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+  font-size: 1.08em;
+  position: relative;
+}
+.card li:hover, .card li.selected-plan {
+  background: var(--danger);
+  color: var(--white);
+  border: 2px solid var(--danger);
+  z-index: 2;
+}
+
+/* Selected plan message */
+#selected-plan-message {
+  font-size: 1.15em;
+  color: var(--military-green);
+  background: var(--accent);
+  border-radius: 8px;
+  padding: 0.7em 1em;
+  margin-top: 1em;
+  box-shadow: 0 2px 8px rgba(34,34,34,0.08);
+  font-family: 'Roboto Mono', 'Roboto', Arial, sans-serif;
+}
+
+/* MILITARY CERT SECTION */
+.military-cert {
+  background: linear-gradient(120deg, rgba(189,183,107,0.13) 80%, rgba(59,77,58,0.13) 100%);
+  border-radius: 20px;
+  max-width: 950px;
+  margin: 2.5rem auto;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 6px 32px var(--shadow);
+  border: 2.5px dashed var(--khaki);
+  position: relative;
+  overflow: hidden;
+  background-image: url('./assets/camouflage-bg.png');
+  background-blend-mode: multiply;
+}
+.military-cert h2 {
+  color: var(--military-green);
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 var(--khaki);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  position: relative;
+}
+.military-cert .icon {
+  width: 1.5em;
+  height: 1.5em;
+  fill: var(--military-green);
+  filter: drop-shadow(0 2px 4px var(--black));
+}
+.military-cert p {
+  font-size: 1.15em;
+  color: #f4eec7;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Roboto Mono', 'Roboto', Arial, sans-serif;
+}
+
+.military-cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  background: rgba(244,238,199,0.92);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(34,34,34,0.10);
+  font-size: 1.13em;
+  color: var(--sand); /* Changed to sand color */
+  font-family: 'Roboto Mono', 'Roboto', Arial, sans-serif;
+}
+.military-cert-list li {
+  padding: 1em 1.2em;
+  border-bottom: 1px solid #e0d9b6;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  color: var(--sand); /* Changed to sand color */
+}
+.military-cert-list li:last-child {
+  border-bottom: none;
+}
+
+/* SIGNUP FORM */
+.signup {
+  background: rgba(59, 77, 58, 0.92);
+  border-radius: 20px;
+  max-width: 700px;
+  margin: 2.5rem auto;
+  padding: 2.5rem 1.5rem;
+  box-shadow: 0 6px 32px var(--shadow);
+  border: 2.5px dashed var(--khaki);
+  position: relative;
+  overflow: hidden;
+  background-image: url('./assets/camouflage-bg.png');
+  background-blend-mode: multiply;
+}
+.signup h2 {
+  color: var(--khaki);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  position: relative;
+}
+.signup .icon {
+  width: 1.3em;
+  height: 1.3em;
+  fill: var(--khaki);
+  filter: drop-shadow(0 2px 4px var(--black));
+}
+form#enrollmentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+.form-group label {
+  color: var(--khaki);
+  font-weight: bold;
+  font-size: 1.05em;
+  letter-spacing: 1px;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+  background: var(--camo-light);
+  color: var(--black);
+  border: 2px solid var(--olive);
+  border-radius: 8px;
+  padding: 0.7em 1em;
+  font-size: 1.08em;
+  font-family: 'Roboto Mono', 'Roboto', Arial, sans-serif;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.form-group input:focus {
+  border-color: var(--danger);
+  outline: none;
+  box-shadow: 0 0 0 3px var(--danger);
+}
+.form-group input[readonly] {
+  background: #e9e7da;
+  color: #888;
+  cursor: not-allowed;
+  border-style: dashed;
+}
+
+.submit-btn {
+  background: linear-gradient(90deg, var(--olive) 60%, var(--khaki) 100%);
+  color: var(--military-green);
+  border: 2.5px dashed var(--khaki);
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0.85rem 2.2rem;
+  font-size: 1.1rem;
+  box-shadow: 2px 2px 0 var(--black), 0 0 8px var(--olive);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: background 0.2s, color 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+.submit-btn:hover {
+  background: var(--danger);
+  color: var(--white);
+  border-color: var(--danger);
+  transform: scale(1.04) rotate(-2deg);
+  box-shadow: 0 4px 16px var(--danger);
+}
+
+/* FOOTER */
+footer {
+  background: var(--black);
+  color: var(--khaki);
+  text-align: center;
+  padding: 2rem 0 1.2rem 0;
+  font-size: 1.05rem;
+  letter-spacing: 1.5px;
+  border-top: 3px double var(--olive);
+  box-shadow: 0 -2px 12px rgba(34,34,34,0.18);
+  margin-top: 3rem;
+  position: relative;
+}
+.footer-logo {
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 2px 8px var(--olive));
+}
+.footer-nav {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.footer-nav a {
+  color: var(--khaki);
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px dashed transparent;
+  transition: border 0.2s, color 0.2s;
+  font-family: 'Roboto Mono', 'Roboto', Arial, sans-serif;
+}
+.footer-nav a:hover {
+  color: var(--danger);
+  border-bottom: 2px dashed var(--danger);
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(60px) scale(0.98);}
+  to { opacity: 1; transform: none;}
+}
+section, .card, .hero, .signup, .military-cert {
+  animation: fadeInUp 0.8s cubic-bezier(.4,1.4,.6,1) both;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .header-content, .plans, .military-cert, .signup {
+    max-width: 98vw;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .plan-cards {
+    gap: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .header-content {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .logo-title {
+    font-size: 1.5rem;
+  }
+  .plans h2, .military-cert h2, .signup h2 {
+    font-size: 1.2rem;
+  }
+  .plan-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 1.2rem 0.7rem 0.7rem 0.7rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    padding: 1.5rem 0.5rem 1rem 0.5rem;
+    border-radius: 0 0 18px 18px;
+  }
+  .plans, .military-cert, .signup {
+    padding: 1rem 0.3rem;
+    border-radius: 12px;
+  }
+  .footer-nav {
+    gap: 1rem;
+    font-size: 0.95em;
+  }
+}
+
+/* ACCESSIBILITY */
+:focus-visible {
+  outline: 2.5px dashed var(--danger);
+  outline-offset: 2px;
+  background: var(--accent);
+}

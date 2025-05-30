@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Device Guard - Elite Military Protection for Devices</title>
+  <meta name="description" content="Elite, military-inspired protection for your electronic devices. Device Guard: Security, reliability, and rapid response." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto+Slab:wght@900&family=Staatliches&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-content">
+      <span class="logo-title">
+        <img src="./assets/military-shield.png" alt="Device Guard Logo" style="height: 2.2em; width: 2.2em; margin-right: 0.7em; vertical-align: middle;" />
+        Device Guard
+      </span>
+      <nav>
+      <a href="index.html" class="header-btn">Home</a>
+      <a href="about.html" class="header-btn" style="background: #bdb76b; color: #3b4d3a;">About</a>
+      <a href="https://eizan-matarin.github.io/Portfolio-Eizan/" class="header-btn" target="_blank" rel="noopener">MORE</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>
+        Elite Military Device Protection
+      </h1>
+      <p>
+        Welcome to Device Guard, where your tech is protected with military precision.<br>
+        Our elite coverage, rapid response, and certified reliability keep your devices ready for any mission.<br>
+        Join the ranks of those who trust Device Guard—your digital shield in a connected world.
+      </p>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="plans">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+      Select Your Mission Plan
+    </h2>
+    <div class="plan-cards">
+      <div class="card recommended" data-device="mobile">
+        <h3>
+          <svg class="plan-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+          Mobile Unit
+        </h3>
+        <ul>
+          <li data-plan="basic">Basic: $5/mo</li>
+          <li data-plan="plus">Plus: $9/mo</li>
+          <li data-plan="premium">Premium: $14/mo</li>
+          <li data-plan="ultra">Ultra: $20/mo</li>
+        </ul>
+      </div>
+      <div class="card" data-device="laptop">
+        <h3>
+          <svg class="plan-icon" viewBox="0 0 24 24"><rect x="4" y="6" width="16" height="12" rx="2"/></svg>
+          Laptop Squad
+        </h3>
+        <ul>
+          <li data-plan="basic">Basic: $7/mo</li>
+          <li data-plan="plus">Plus: $12/mo</li>
+          <li data-plan="premium">Premium: $18/mo</li>
+          <li data-plan="ultra">Ultra: $25/mo</li>
+        </ul>
+      </div>
+      <div class="card" data-device="pc">
+        <h3>
+          <svg class="plan-icon" viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="16" rx="2"/></svg>
+          Command PC
+        </h3>
+        <ul>
+          <li data-plan="basic">Basic: $6/mo</li>
+          <li data-plan="plus">Plus: $11/mo</li>
+          <li data-plan="premium">Premium: $16/mo</li>
+          <li data-plan="ultra">Ultra: $22/mo</li>
+        </ul>
+      </div>
+      <div class="card" data-device="console">
+        <h3>
+          <svg class="plan-icon" viewBox="0 0 24 24"><rect x="5" y="8" width="14" height="8" rx="2"/></svg>
+          Console Ops
+        </h3>
+        <ul>
+          <li data-plan="basic">Basic: $4/mo</li>
+          <li data-plan="plus">Plus: $8/mo</li>
+          <li data-plan="premium">Premium: $13/mo</li>
+          <li data-plan="ultra">Ultra: $19/mo</li>
+        </ul>
+      </div>
+      <div class="card" data-device="business">
+        <h3>
+          <svg class="plan-icon" viewBox="0 0 24 24"><polygon points="12,2 22,7 22,17 12,22 2,17 2,7"/></svg>
+          Business Battalion
+        </h3>
+        <ul>
+          <li data-plan="basic">Basic: $30/mo</li>
+          <li data-plan="plus">Plus: $45/mo</li>
+          <li data-plan="premium">Premium: $60/mo</li>
+          <li data-plan="ultra">Ultra: $80/mo</li>
+        </ul>
+      </div>
+    </div>
+    <div id="selected-plan-message"></div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="military-cert">
+    <h2>
+      <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l4 4-4 4-4-4z"/></svg>
+      Why Choose Device Guard?
+    </h2>
+    <p>
+      <strong>• Military-Grade Certifications</strong><br>
+      <strong>• 24/7 Rapid Response</strong><br>
+      <strong>• Trusted by Families, Businesses, and Professionals</strong><br>
+      <strong>• Your devices, always protected and ready for action</strong>
+    </p>
+  </section>
+
+<section class="signup">
+  <h2>
+    <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l10 5-4 9-6 6-6-6-4-9z" fill="currentColor"/></svg>
+    Enlist for Protection
+  </h2>
+  <form id="enrollmentForm" autocomplete="off" method="POST" action="#">
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required autocomplete="name" />
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required autocomplete="email" />
+    </div>
+    <div class="form-group">
+      <label for="job">Occupation:</label>
+      <input type="text" id="job" required autocomplete="organization-title" />
+    </div>
+    <div class="form-group">
+      <label for="chosen-plan">Chosen Plan:</label>
+      <input type="text" id="chosen-plan" name="chosen-plan" readonly required placeholder="Select a plan above" />
+    </div>
+    <div class="form-card" style="display: flex; align-items: center; justify-content: center; flex-direction: column; margin-bottom: 1.5em; margin-top: 2em; background: rgba(59,77,58,0.92); border-radius: 14px; box-shadow: 0 2px 12px rgba(34,34,34,0.10); padding: 2em 1em;">
+      <button type="submit" class="submit-btn" style="display: flex; align-items: center;">
+        <img src="./assets/military-shield.png" alt="Device Guard Logo" style="height: 2.2em; width: 2.2em; margin-right: 0.7em; vertical-align: middle;" />
+        Secure My Device
+      </button>
+    </div>
+  </form>
+</section>
+
+  <footer>
+    <p>© 2025 Device Guard by Eizan. All rights reserved.</p>
+    <nav class="footer-nav">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="about.html">About</a>
+    </nav>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
